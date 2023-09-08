@@ -7,6 +7,7 @@ import BusinessGrowth from "./components/business growth/BusinessGrowth";
 import TeamTogether from "./components/team toghether/TeamToghether";
 import QuestionAnswer from "./components/question answer/QuestionAnswer";
 import Subscribe from "./components/subscribe/Subscribe";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <TeamTogether />
       <QuestionAnswer />
       <Subscribe />
+      <Footer />
     </>
   );
 }
