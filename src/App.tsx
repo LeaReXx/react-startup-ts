@@ -5,6 +5,7 @@ import AboutInvesting from "./components/about investing/AboutInvesting";
 import MakeMoney from "./components/make money/MakeMoney";
 import BusinessGrowth from "./components/business growth/BusinessGrowth";
 import TeamTogether from "./components/team toghether/TeamToghether";
+import QuestionAnswer from "./components/question answer/QuestionAnswer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MakeMoney />
       <BusinessGrowth />
       <TeamTogether />
+      <QuestionAnswer />
     </>
   );
 }
