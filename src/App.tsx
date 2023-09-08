@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Customers from "./components/customers/Customers";
 import AboutInvesting from "./components/about investing/AboutInvesting";
 import MakeMoney from "./components/make money/MakeMoney";
+import BusinessGrowth from "./components/business growth/BusinessGrowth";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutServices />
       <AboutInvesting />
       <MakeMoney/>
+      <BusinessGrowth/>
     </>
   );
 }
