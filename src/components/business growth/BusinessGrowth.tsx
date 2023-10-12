@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 export default function BusinessGrowth() {
   let businessGrowth: {
     id: number;
     title: string;
     description: string;
-    icon: string[];
+    icon: IconProp;
   }[] = [
     {
       id: 1,
@@ -56,26 +56,17 @@ export default function BusinessGrowth() {
         Business Growth Features
       </h1>
       <div className="flex flex-col md:flex-row flex-wrap justify-center">
-        {businessGrowth.map(
-          (item: {
-            id: number;
-            title: string;
-            description: string;
-            icon: string[];
-          }) => (
-            <div key={item.id} className="px-4 py-2 md:basis-2/4 lg:basis-1/3">
-              <div className="bg-[#C6E0F9] w-14 h-14 flex items-center justify-center rounded-xl">
-                <FontAwesomeIcon icon={item.icon} className="text-2xl" />
-              </div>
-              <div className="my-4">
-                <h3 className="text-2xl font-semibold">{item.title}</h3>
-                <p className="text-lg text-[#555555] py-3">
-                  {item.description}
-                </p>
-              </div>
+        {businessGrowth.map((item) => (
+          <div key={item.id} className="px-4 py-2 md:basis-2/4 lg:basis-1/3">
+            <div className="bg-[#C6E0F9] w-14 h-14 flex items-center justify-center rounded-xl">
+              <FontAwesomeIcon icon={item.icon} className="text-2xl" />
             </div>
-          )
-        )}
+            <div className="my-4">
+              <h3 className="text-2xl font-semibold">{item.title}</h3>
+              <p className="text-lg text-[#555555] py-3">{item.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
